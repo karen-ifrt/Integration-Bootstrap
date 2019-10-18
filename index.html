@@ -8,17 +8,21 @@
   <title>Intégration Bootstrap</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="script.js"></script>
+
 
 </head>
 
 <body>
 
+  <button onclick="topFunction()" id="myBtn">
+  <img src="images/up-arrow.svg" alt="Revenir en haut"></button>
+
+  
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <div class="row">
           <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
@@ -28,7 +32,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
           <a class="navbar-brand navbar-title" href="#">Langerba</a>
         </div>
 
@@ -67,14 +70,13 @@
             </li>
           </ul>
         </div>
+        <div class="row">
+          <a class="navbar-brand navbar-tel" href="#">+1 800 598 78 87</a>
+        </div>
 
-        <a class="navbar-brand navbar-tel" href="#">+1 800 598 78 87</a>
         <img src="images/phone-with-wire.svg" alt="Phone" class="icon-phone" width="30px">
-
-
       </div>
     </nav>
-
   </header>
 
   <section id="world">
@@ -218,15 +220,109 @@
     <div class="container">
       <h3>Get your free e-mail course!</h3>
       <p>30 lessons per week, Upper-Intermediate to Advanced levels, course length: 4, 8-12 weeks</p>
-      <div class="row">
-        <div class="col-md-6 m-auto">
-          <input type="text" placeholder="Enter your email">
+      <div class="row ">
+        <div class="col-xs-6 m-auto">
+          <input type="text" placeholder="Enter your e-mail">
           <a class="btn" href="#" role="button">I want a course</a>
         </div>
       </div>
     </div>
 
   </section>
+
+  <section id="carousel">
+    <div class="container">
+      <h3>What our students are saying</h3>
+
+      <div class="mycarousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/page01_img04.png" class=" quote-img" alt="Guillemets">
+              <p>Two unforgettable weeks in Langerba! I would like to thank all the teachers for their positive spirit,
+                amazing lessons and high professionalism. I will miss our lessons!</p>
+              <h5>Anthony Little</h5>
+            </div>
+            <div class="carousel-item">
+              <img src="images/page01_img04.png" class="d-block w-10 quote-img" alt="Guillemets">
+              <p>I just can praise the professionalism and kindness of the staff working here. They advised me on the
+                best courses for my level and allowed me to change them at any time. Thank you all.</p>
+              <h5>Thomas Austin</h5>
+            </div>
+            <div class="carousel-item">
+              <img src="images/page01_img04.png" class="d-block w-10 quote-img" alt="Guillemets">
+              <p>I enjoyed my experience with you. It was worth every spent dollar. More than just the language, I
+                learned about so many different cultures and made friends from all over the world. </p>
+              <h5>Patricia Cruz</h5>
+            </div>
+            <div class="carousel-item">
+              <img src="images/page01_img04.png" class="d-block w-10 quote-img" alt="Guillemets">
+              <p>Your business program, the flexibility with scheduling, the teachers and directors are very easygoing.
+                The location is perfect, the prices are excellent compared to other schools.</p>
+              <h5>Gary Montgomery</h5>
+            </div>
+            <div class="carousel-item">
+              <img src="images/page01_img04.png" class="d-block w-10 quote-img" alt="Guillemets">
+              <p>My experience here was the best experience I've ever had, and I do realize the improvement in my
+                language. Sometimes I surprise myself, because now I speak so fluently. Thank you very much!</p>
+              <h5>Helen Howard</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+      <nav class="navbar navbar-expand-lg">
+
+    <div class="container nav-cont">
+          <a class="navbar-brand" href="#">Langerba</a>
+          <div class="navbar" id="navbarText">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <a href="#"><img src="images/facebook-logo.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="#" class="google-icon"><img src="images/google-plus.svg" alt="Google Plus"></a>
+            <a href="#" class="insta-icon"><img src="images/instagram-social-network-logo-of-photo-camera.svg"
+                alt="Instagram"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="Linkedin"></a>
+          </div>
+    </div>
+  </nav>
+
+  <hr>
+
+  <div class="container copyright-cont">
+    <p class="copyright">2016. All Langerba financings are subject to eligibility, credit and underwriting approval. The programs advertised on this page are not a commitment or guarantee from Langerba to provide funds. Programs, rates and other terms & conditions on this page are subject to change without notice. <span>Privacy Policy</span></p>
+  </div>
+
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -237,6 +333,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
